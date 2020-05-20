@@ -1,5 +1,5 @@
 {
-  "name": "sharemasters",
+  "name": "shareish",
   "version": "1.0.0",
   "description": "An app to connect users to rent or rent out tools or equipment",
   "main": "server.js",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Brigmu/Sharemasters.git"
+    "url": "git+https://github.com/crispysodium/crispy_shareish.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Brigmu/Sharemasters/issues"
+    "url": "https://github.com/crispysodium/crispy_shareish/issues"
   },
-  "homepage": "https://github.com/Brigmu/Sharemasters#readme",
+  "homepage": "https://github.com/crispysodium/crispy_shareish#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "connect-ensure-login": "^0.1.1",
