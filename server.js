@@ -7,7 +7,7 @@ const db = require("./models");
 const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
 const app = express();
-const cors = require("cors")
+const cors = require("cors");
 
 
 // Define middleware here
@@ -28,8 +28,8 @@ app.use(passport.session());
 
 
 // Initialize MongoDb connection
-mongoose.connect(process.env.MONGODB_URI || "mongodb://shareish-user:password1@ds029107.mlab.com:29107/heroku_7x4h350g");
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://shareish-user:password1@ds029107.mlab.com:29107/heroku_7x4h350g", { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://shareish-user:password1@ds029107.mlab.com:29107/heroku_7x4h350g");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://shareish-user:password1@ds029107.mlab.com:29107/heroku_7x4h350g", { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Define passport authentication strategy
 passport.use(db.User.createStrategy());
@@ -210,7 +210,8 @@ app.get('/api/user/:id', (req, res) => {
   }
   const user = testUsers[index];
   res.json(user);
-})
+});
+
 // front-end test data code
 app.use(routes);
 
