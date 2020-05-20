@@ -1,5 +1,5 @@
 {
-  "name": "shareish",
+  "name": "crispy_shareish",
   "version": "1.0.0",
   "description": "An app to connect users to rent or rent out tools or equipment",
   "main": "server.js",
