@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "react-bulma-components";
+import "./styles.css";
 
 function SearchBar(props) {
     const [state, setState] = useState();
