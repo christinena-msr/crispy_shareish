@@ -13,7 +13,7 @@ const cors = require("cors");
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(__dirname + "/client/public"));
+// app.use(express.static(__dirname + "/client/public"));
 
 // adding cors so that frontend can talk to backend
 app.use(cors());
